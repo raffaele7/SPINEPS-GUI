@@ -30,32 +30,12 @@ The GUI wraps that workflow for Windows workstations and research machines. It h
 
 ## Download
 
-Download the packaged Windows `.zip` from ownCloud:
+## Download the packaged Windows `.zip` from ownCloud:
 
-<https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
-
-After downloading, extract the archive and run:
-
-```powershell
-SpineSegmentation\SpineSegmentation.exe
-```
+## <https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
 
 Keep the extracted folder together. The executable depends on bundled files in `_internal`.
 
-## Quick Start
-
-From a packaged Windows build:
-
-```powershell
-dist\SpineSegmentation\SpineSegmentation.exe
-```
-
-From source:
-
-```powershell
-conda activate gui
-python gui.py
-```
 
 ## Basic Workflow
 
@@ -86,53 +66,6 @@ SPINEPS derivatives may include:
 - snapshot PNG
 - raw/model-space outputs depending on SpinePS configuration
 
-## Models
-
-The GUI defaults to the SpinePS CT model set:
-
-```text
-SPINEPS_GUI_SEMANTIC_MODEL=ct
-SPINEPS_GUI_INSTANCE_MODEL=ct_instance
-SPINEPS_GUI_LABELING_MODEL=ct_labeling
-```
-
-To override model choices:
-
-```powershell
-$env:SPINEPS_GUI_SEMANTIC_MODEL = "ct"
-$env:SPINEPS_GUI_INSTANCE_MODEL = "ct_instance"
-$env:SPINEPS_GUI_LABELING_MODEL = "ct_labeling"
-python gui.py
-```
-
-To disable labeling:
-
-```powershell
-$env:SPINEPS_GUI_LABELING_MODEL = "none"
-```
-
-To force CPU mode:
-
-```powershell
-$env:SPINEPS_GUI_CPU = "1"
-python gui.py
-```
-
-## Packaging
-
-The Windows package is built with PyInstaller:
-
-```powershell
-python -m PyInstaller --noconfirm --clean spine_segmentation.spec
-```
-
-The expected packaged app is:
-
-```text
-dist\SpineSegmentation\SpineSegmentation.exe
-```
-
-Distribute the complete `dist\SpineSegmentation` folder, including `_internal`. Do not copy only the executable.
 
 ## Notes And Limitations
 
