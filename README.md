@@ -92,6 +92,10 @@ This GUI is distributed for academic non-commercial use. See [LICENSE.txt](LICEN
 
 ## Citation
 
+If you use this GUI or the thoracolumbar CT subregion workflow, please cite:
+
+- Fully automated segmentation of anatomical subregions of the thoracolumbar spine in computed tomography. Springer Medicine. <https://www.springermedicine.com/computed-tomography/computed-tomography/fully-automated-segmentation-of-anatomical-subregions-of-the-tho/53098878>
+
 If you use the SpinePS backend, cite the upstream SpinePS work:
 
 ```bibtex
