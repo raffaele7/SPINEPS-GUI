@@ -30,6 +30,20 @@ The GUI wraps that workflow for Windows workstations and research machines. It h
 - 3D surface visualization and STL-oriented workflow support
 - cached output reuse for repeated review
 
+## Download
+
+Download the packaged Windows `.zip` from ownCloud:
+
+<https://owncloud.damutten.ch/s/hWm6MsNE1yTVPkv>
+
+After downloading, extract the archive and run:
+
+```powershell
+SpineSegmentation\SpineSegmentation.exe
+```
+
+Keep the extracted folder together. The executable depends on bundled files in `_internal`.
+
 ## Quick Start
 
 From a packaged Windows build:
